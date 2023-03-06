@@ -1,0 +1,643 @@
+/* GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.html {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #480006;
+}
+
+/* FIN GLOBALES */
+
+/* ENCABEZADO */
+
+.encabezado-texto {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+/* FIN ENCABEZADO */
+
+/* TITULOS (H1) DE LAS PAGINAS */
+
+/* Titulo h1 pagina del index */
+
+.titulo-index {
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #480006;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: #BF93AE;
+
+
+}
+
+/* Titulo h1 pagina de ubicacion */
+
+.titulo-mapa {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #480006;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: #BF93AE;
+}
+
+
+/* Titulo h1 pagina de Promociones */
+
+.titulo-promociones {
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #480006;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: #BF93AE;
+
+}
+
+/* FIN Titulos */
+
+
+/* Boton "buscar" del header */
+
+.button-buscar {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 1px 10px;
+    color: white;
+    background-color: #BF93AE;
+
+
+}
+
+.button-buscar:hover{
+    background-color: #e3c0c0;
+}
+
+
+
+/* MEDIA QUERIES - El boton de menu desaparecera cuando la pantalla llegue a 768px o menos */
+
+@media screen and (max-width: 768px) {
+    .nav-itemdropdown {
+        display: none;
+    }
+}
+
+
+/* FIN boton "buscar" del header */
+
+/* Carrito de compras y Whatsapp */
+
+.container-carrito-whatsapp {
+
+    top: 40px;
+    left: 85%;
+    width: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: transparent;
+    padding: 100px;
+    position: fixed;
+
+}
+
+.soy-carrito,
+.soy-whatsapp {
+
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+
+
+/* MEDIA QUERIES - Carrito de compras y whatsapp "desaparece" cuando llega a 768px */
+
+@media screen and (max-width: 768px) {
+    .container-carrito-whatsapp {
+        display: none;
+    }
+}
+
+/* Fin carrito de compras y whatsapp */
+
+
+/* Img Banner "Calzados Natitax By Mica" */
+
+.container-img-banner {
+    width: 100px;
+    height: 100px;
+
+}
+
+.img-container-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-banner-index {
+    width: 100%;
+    height: auto;
+}
+
+/* FIN Img Banner "Calzados Natitax By Mica" */
+
+/* Img "%50 OFF en productos seleccionados"  */
+
+.container-img50porciento {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-50porciento {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* MEDIA QUERIES - "img de %50off se ajusta a los valores de la pantalla"  */
+
+@media only screen and (min-width: 480px) and (max-with:768px) {
+    .container-img50porciento {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/* Fin Img "%50 OFF en productos seleccionados"  */
+
+/* Carrusel imagenes index */
+
+.carrusel {
+    padding-top: 1%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 710px;
+    scroll-behavior: smooth;
+}
+
+.carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+.carrusel-fotos img {
+
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    object-fit: contain;
+}
+
+.carrusel-menu {
+    display: none;
+}
+
+/* MOBILE FIRST Carussel imagenes Index */
+
+@media screen and (min-width: 480px) {
+    .carrusel-fotos {
+        overflow: hidden;
+    }
+
+    .carrusel-fotos img {
+        width: 700px;
+        height: 600px;
+    }
+
+    .carrusel-menu {
+        display: block;
+    }
+
+    .carrusel-menu img {
+        width: 50px;
+        height: 40px;
+        border: 3px solid black;
+        box-sizing: border-box;
+    }
+
+    .carrusel-menu img:hover {
+        border-radius: none;
+
+
+    }
+
+
+}
+
+/* FIN CARRUSEL IMAGENES */
+
+
+/* Mapa de pagina de ubicacion puesto de manera responsive */
+
+.contenedor-responsivo {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+}
+
+.iframe-responsivo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding-bottom: 10%;
+}
+
+/* FIN mapa de pagina de ubicacion */
+
+/* PAGINA DE PROMOCIONES */
+
+#promociones h1 {
+
+    text-align: center;
+    color: rgb(252, 242, 242);
+}
+
+#promociones h2 {
+    color: #BF93AE;
+    margin-bottom: 100px;
+
+
+}
+
+/*Titulo h2 pagina de promociones */
+
+.subtitle-promociones {
+    font-size: 1em;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .img_promociones {
+        text-align: center;
+
+
+    }
+}
+
+/* FIN Titulo h2 pagina promociones */
+
+/* Fondo de pagina de promociones */
+
+#promociones {
+
+    display: flex;
+    padding-bottom: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 180vh;
+    color: #fffdfa;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/img/zapato1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+
+#promociones img {
+
+    width: 190px;
+    height: 190px;
+    padding: 6px 5px;
+
+
+}
+
+/* Boton de la pagina de promociones */
+
+
+#promociones .button_promocion {
+
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 1px 10px;
+    color: rgb(188, 81, 81);
+    background-color: #BF93AE;
+}
+
+
+div .div-imagen1 {
+
+
+    display: flex;
+    margin-bottom: 120px;
+    justify-content: center;
+
+}
+
+div .div-imagen2 {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* FIN PAGINA PROMOCIONES */
+
+/* Pagina de productos - Card - Tarjetas */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Cards*/
+.container-card {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.title-cards {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #480006;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card h3 {
+    margin-bottom: 15px;
+    color: #480006;
+}
+
+.card .contenido-card p {
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #a30370;
+    border: 1px solid #ffd3f4;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+    background: #BF93AE;
+    color: #fff;
+}
+
+/* MEDIA QUERIES de pagina de productos */
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .container-card {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 100px;
+    }
+}
+
+/*FIN pagina de productos - Cards - Tarjetas*/
+
+/* Pagina de contacto img de fondo */
+
+#container-form {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fffdfa;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url("/img/imagen-contacto.jpeg");
+    margin: 0;
+
+}
+
+/* Pagina Formulario pagina de contacto */
+
+#form-contacto{
+    width: 400px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+/* H2 pagina de contacto */
+
+#subtitle-contacto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#BF93AE;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-form-contacto{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffecf7;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -10px;
+    
+   
+  
+}
+
+/* Imput y text area de la pagina de contacto */
+
+.input-contacto, .textarea-contacto{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 20px;
+}
+
+.textarea-contacto{
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+}
+
+/* FIN Imput y text area de la pagina de contacto */
+
+/* MEDIA QUERIES del formulario de contacto para mobile adaptado */
+
+@media screen and (max-width:480px){
+    #form-contacto{
+        width: 100%;
+    }
+}
+
+/* FIN pagina formulario de contacto */
+
+
+/* Suscripcion/Newslatter - Aside */
+
+.promociones {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #480006;
+    font-size: 100%;
+    margin-top: 20px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: #BF93AE;
+}
+
+.suscribirme {
+
+    text-align: center;
+    float: none;
+    height: 3%;
+    width: 3%;
+
+}
+
+.button-suscribirme {
+    margin-top: 10px;
+}
+
+/* FIN suscripcion/newslatter - Aside */
+
+/* FOOTER - Logos de Redes sociales */
+
+.logos-footer {
+    width: 100%;
+    height: 100%;
+}
+
+.img-logo-fb {
+    width: 100px;
+    height: 100px;
+}
+
+.img-logo-insta {
+    width: 100px;
+    height: 100px;
+}
+
+.img-logo-mail {
+    width: 100px;
+    height: 100px;
+}
+
+/* Fin logos de Redes sociales */
